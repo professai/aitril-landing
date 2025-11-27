@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AiTril - Multi-LLM orchestration CLI that coordinates OpenAI, Anthropic, and Google Gemini in parallel">
+    <title>AiTril 🧬 Multi-LLM Orchestration</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧬</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Syne:wght@400;600;800&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dna-background"></div>
+
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <span class="logo-emoji">🧬</span>
+                <span class="logo-text">AiTril</span>
+            </div>
+            <nav class="nav">
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#install" class="nav-link">Install</a>
+                <a href="https://github.com/professai/aitril" class="nav-link" target="_blank">GitHub</a>
+                <a href="https://pypi.org/project/aitril/" class="nav-link nav-link-cta" target="_blank">PyPI</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        <span class="hero-title-line">Orchestrate</span>
+                        <span class="hero-title-line hero-title-gradient">Multiple AI Minds</span>
+                        <span class="hero-title-line">In Perfect Harmony</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        AiTril coordinates OpenAI, Anthropic, and Google Gemini in parallel—enabling consensus, debate, and collaborative code building through a unified CLI.
+                    </p>
+                    <div class="hero-cta">
+                        <button class="cta-button cta-primary" data-copy="pip install aitril">
+                            <span class="cta-icon">⚡</span>
+                            <span class="cta-text">pip install aitril</span>
+                        </button>
+                        <a href="#demo" class="cta-button cta-secondary">
+                            <span class="cta-text">See It Work</span>
+                            <span class="cta-icon">→</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="code-window">
+                        <div class="code-header">
+                            <span class="code-dot"></span>
+                            <span class="code-dot"></span>
+                            <span class="code-dot"></span>
+                        </div>
+                        <pre class="code-content"><code>$ aitril tri "What's the future of AI?"
+
+<span class="code-comment"># Querying 3 providers in parallel...</span>
+
+<span class="code-provider">[GPT-4o]</span> <span class="code-text">The future lies in specialized,
+collaborative AI systems...</span>
+
+<span class="code-provider">[Claude]</span> <span class="code-text">Multi-agent coordination will
+unlock unprecedented capabilities...</span>
+
+<span class="code-provider">[Gemini]</span> <span class="code-text">Integration across diverse
+models creates emergent intelligence...</span>
+
+<span class="code-success">✓ Tri-lam consensus: Coordinated AI > Single models</span></code></pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="features">
+            <div class="container">
+                <h2 class="section-title">
+                    <span class="section-title-accent">Three Minds,</span> Infinite Possibilities
+                </h2>
+
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">⚡</div>
+                        <h3 class="feature-title">Parallel Queries</h3>
+                        <p class="feature-description">
+                            Send prompts to OpenAI, Anthropic, and Gemini simultaneously. Compare responses side-by-side in real-time with streaming output.
+                        </p>
+                        <div class="feature-code">
+                            <code>aitril tri "Your prompt"</code>
+                        </div>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">🤝</div>
+                        <h3 class="feature-title">Agent Coordination</h3>
+                        <p class="feature-description">
+                            Consensus mode, debate mode, sequential building—agents see each other's responses and collaborate toward better solutions.
+                        </p>
+                        <div class="feature-code">
+                            <code>aitril tri --coordinate consensus</code>
+                        </div>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">🏗️</div>
+                        <h3 class="feature-title">Code Building</h3>
+                        <p class="feature-description">
+                            Multi-agent consensus on architecture, sequential implementation, and collaborative code review—all with your preferred tech stack.
+                        </p>
+                        <div class="feature-code">
+                            <code>aitril build "Create an API"</code>
+                        </div>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">💾</div>
+                        <h3 class="feature-title">Session Memory</h3>
+                        <p class="feature-description">
+                            Track conversations across named sessions. Tech stack preferences, project context, and build artifacts persist across interactions.
+                        </p>
+                        <div class="feature-code">
+                            <code>aitril --session my-project</code>
+                        </div>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">🎯</div>
+                        <h3 class="feature-title">Tech Stack Aware</h3>
+                        <p class="feature-description">
+                            Configure your preferred languages, frameworks, and tools. Agents adapt their responses to match your development environment.
+                        </p>
+                        <div class="feature-code">
+                            <code>aitril config set-stack</code>
+                        </div>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">🔒</div>
+                        <h3 class="feature-title">Privacy First</h3>
+                        <p class="feature-description">
+                            API keys and cache stored locally. No telemetry, no tracking. Open source and fully transparent—audit every line.
+                        </p>
+                        <div class="feature-code">
+                            <code>~/.config/aitril/</code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="demo" class="demo">
+            <div class="container">
+                <h2 class="section-title">
+                    See <span class="section-title-accent">Tri-Lam</span> In Action
+                </h2>
+
+                <div class="demo-window">
+                    <div class="demo-tabs">
+                        <button class="demo-tab demo-tab-active" data-tab="parallel">Parallel Queries</button>
+                        <button class="demo-tab" data-tab="consensus">Consensus Mode</button>
+                        <button class="demo-tab" data-tab="code">Code Building</button>
+                    </div>
+
+                    <div class="demo-content demo-content-active" data-content="parallel">
+                        <pre class="demo-code"><code><span class="demo-prompt">$</span> aitril tri "Compare your strengths"
+
+<span class="demo-stage">━━━ Querying 3 providers ━━━</span>
+
+<span class="demo-provider">🟢 GPT-4o</span>
+I excel at creative reasoning, broad knowledge
+integration, and natural conversation flow...
+
+<span class="demo-provider">🔵 Claude Sonnet</span>
+My strengths lie in nuanced analysis, careful
+reasoning, and thorough response structuring...
+
+<span class="demo-provider">🟡 Gemini Flash</span>
+I specialize in rapid multimodal processing,
+efficient inference, and real-time responses...
+
+<span class="demo-success">✓ Completed in 2.3s</span></code></pre>
+                    </div>
+
+                    <div class="demo-content" data-content="consensus">
+                        <pre class="demo-code"><code><span class="demo-prompt">$</span> aitril tri --coordinate consensus \
+    "Best architecture for microservices?"
+
+<span class="demo-stage">━━━ Phase 1: Independent responses ━━━</span>
+<span class="demo-provider">All providers</span> responding in parallel...
+
+<span class="demo-stage">━━━ Phase 2: Consensus synthesis ━━━</span>
+<span class="demo-provider">Synthesizer</span> analyzing agreements...
+
+<span class="demo-consensus">📊 Consensus Report</span>
+<span class="demo-agreement">✓ Strong agreement (3/3):</span>
+  • Event-driven architecture with message queues
+  • Service mesh for inter-service communication
+  • Independent data stores per service
+
+<span class="demo-agreement">⚠ Partial agreement (2/3):</span>
+  • API gateway pattern (GPT-4o, Claude)
+  • Container orchestration (Claude, Gemini)
+
+<span class="demo-success">✓ Consensus achieved</span></code></pre>
+                    </div>
+
+                    <div class="demo-content" data-content="code">
+                        <pre class="demo-code"><code><span class="demo-prompt">$</span> aitril build "REST API for user auth"
+
+<span class="demo-stage">━━━ Planning Phase ━━━</span>
+<span class="demo-provider">Building consensus</span> on architecture...
+<span class="demo-success">✓ Plan approved by all agents</span>
+
+<span class="demo-stage">━━━ Implementation Phase ━━━</span>
+<span class="demo-provider">Agent 1</span> implements core auth logic...
+<span class="demo-provider">Agent 2</span> builds on previous (middleware)...
+<span class="demo-provider">Agent 3</span> adds final integration...
+
+<span class="demo-stage">━━━ Review Phase ━━━</span>
+<span class="demo-provider">Consensus review</span> checking quality...
+
+<span class="demo-consensus">📝 Review Summary</span>
+<span class="demo-agreement">✓ Correctness: 3/3 approved</span>
+<span class="demo-agreement">✓ Security: JWT implementation validated</span>
+<span class="demo-agreement">✓ Tests: Coverage recommendations added</span>
+
+<span class="demo-success">✓ Ready to deploy</span></code></pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="install" class="install">
+            <div class="container">
+                <h2 class="section-title">
+                    Get <span class="section-title-accent">Started</span> in Seconds
+                </h2>
+
+                <div class="install-steps">
+                    <div class="install-step">
+                        <div class="install-step-number">1</div>
+                        <div class="install-step-content">
+                            <h3 class="install-step-title">Install AiTril</h3>
+                            <div class="install-code-block">
+                                <code class="install-code">pip install aitril</code>
+                                <button class="install-copy" data-copy="pip install aitril">Copy</button>
+                            </div>
+                            <p class="install-step-note">Requires Python 3.14.0+</p>
+                        </div>
+                    </div>
+
+                    <div class="install-step">
+                        <div class="install-step-number">2</div>
+                        <div class="install-step-content">
+                            <h3 class="install-step-title">Configure Providers</h3>
+                            <div class="install-code-block">
+                                <code class="install-code">aitril init</code>
+                                <button class="install-copy" data-copy="aitril init">Copy</button>
+                            </div>
+                            <p class="install-step-note">Interactive setup for API keys (at least 2 providers recommended)</p>
+                        </div>
+                    </div>
+
+                    <div class="install-step">
+                        <div class="install-step-number">3</div>
+                        <div class="install-step-content">
+                            <h3 class="install-step-title">Start Orchestrating</h3>
+                            <div class="install-code-block">
+                                <code class="install-code">aitril tri "Hello, tri-lam world!"</code>
+                                <button class="install-copy" data-copy="aitril tri \"Hello, tri-lam world!\"">Copy</button>
+                            </div>
+                            <p class="install-step-note">Query all providers in parallel</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="install-links">
+                    <a href="https://github.com/professai/aitril" class="install-link" target="_blank">
+                        <span class="install-link-icon">📖</span>
+                        <span class="install-link-text">Read the Docs</span>
+                    </a>
+                    <a href="https://github.com/professai/aitril" class="install-link" target="_blank">
+                        <span class="install-link-icon">⭐</span>
+                        <span class="install-link-text">Star on GitHub</span>
+                    </a>
+                    <a href="https://pypi.org/project/aitril/" class="install-link" target="_blank">
+                        <span class="install-link-icon">📦</span>
+                        <span class="install-link-text">View on PyPI</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-emoji">🧬</span>
+                    <span class="logo-text">AiTril</span>
+                </div>
+                <p class="footer-tagline">Multi-LLM orchestration. Open source. Privacy first.</p>
+                <div class="footer-links">
+                    <a href="https://github.com/professai/aitril" target="_blank">GitHub</a>
+                    <span class="footer-divider">·</span>
+                    <a href="https://pypi.org/project/aitril/" target="_blank">PyPI</a>
+                    <span class="footer-divider">·</span>
+                    <a href="https://github.com/professai/aitril/issues" target="_blank">Issues</a>
+                </div>
+                <p class="footer-copyright">Apache 2.0 License · Built with AiTril consensus mode</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

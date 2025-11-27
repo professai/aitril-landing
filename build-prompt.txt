@@ -1,0 +1,56 @@
+Design and build a stunning static landing page for AiTril - a multi-LLM orchestration CLI tool that coordinates OpenAI, Anthropic, and Google Gemini in parallel.
+
+## Design Requirements
+
+### Aesthetic Guidelines (Critical - Avoid AI Slop)
+You tend to converge toward generic, "on distribution" outputs. In frontend design, this creates what users call the "AI slop" aesthetic. Avoid this: make creative, distinctive frontends that surprise and delight. Focus on:
+
+**Typography:** Choose fonts that are beautiful, unique, and interesting. Avoid generic fonts like Arial and Inter; opt instead for distinctive choices that elevate the frontend's aesthetics.
+
+**Color & Theme:** Commit to a cohesive aesthetic. Use CSS variables for consistency. Dominant colors with sharp accents outperform timid, evenly-distributed palettes. Draw from IDE themes and cultural aesthetics for inspiration.
+
+Use the **60-30-10 rule** based on DNA emoji (🧬) colors:
+- 60% dominant: Deep blue/purple (#4A5FD9 or similar rich blue-violet)
+- 30% secondary: Complementary pink/magenta (#E94C89 or vibrant pink)
+- 10% accent: Bright cyan/electric blue (#00D9FF for CTAs and highlights)
+
+**Motion:** Use animations for effects and micro-interactions. Prioritize CSS-only solutions. Focus on high-impact moments: one well-orchestrated page load with staggered reveals (animation-delay) creates more delight than scattered micro-interactions.
+
+**Backgrounds:** Create atmosphere and depth rather than defaulting to solid colors. Layer CSS gradients, use geometric patterns, or add contextual effects that match the overall aesthetic.
+
+**Avoid generic AI-generated aesthetics:**
+- Overused font families (Inter, Roboto, Arial, system fonts)
+- Clichéd color schemes (particularly purple gradients on white backgrounds)
+- Predictable layouts and component patterns
+- Cookie-cutter design that lacks context-specific character
+
+### Content Requirements
+- Hero section with compelling headline about multi-LLM orchestration
+- Feature highlights: Parallel Queries, Agent Coordination (consensus/debate/code building), Session Management
+- Code example showing tri-lam mode
+- Installation instructions
+- Link to GitHub (https://github.com/professai/aitril)
+- Link to PyPI (https://pypi.org/project/aitril/)
+- DNA emoji (🧬) as the visual identifier/favicon reference
+
+### Technical Requirements
+Create THREE separate files:
+1. **index.html** - Semantic HTML5, minimal inline styles
+2. **style.css** - All styles with CSS variables, animations, gradients
+3. **app.js** - Minimal JavaScript for interactions (scroll effects, code copy button, etc.)
+
+Use modern CSS features:
+- CSS Grid and Flexbox
+- CSS custom properties (variables)
+- CSS animations and transitions
+- No external dependencies (no Bootstrap, Tailwind, etc.)
+- No framework libraries (vanilla JS only)
+
+Make it:
+- Responsive (mobile-first)
+- Fast loading
+- Visually striking and memorable
+- Professional yet creative
+- GitHub Pages ready
+
+Think outside the box! Create something that feels genuinely designed for a cutting-edge multi-AI coordination tool. Make it feel like the future of AI collaboration.
