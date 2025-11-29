@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="AiTril v0.0.36 - Multi-LLM orchestration with artifact-based coordination, file verification, and automated deployment">
-    <title>AiTril 🧬 Multi-LLM Orchestration | v0.0.36</title>
+    <meta name="description" content="AiTril v0.0.37 - Multi-LLM orchestration with one-command installation, Gemini fixes, and tech stack configuration">
+    <title>AiTril 🧬 Multi-LLM Orchestration | v0.0.37</title>
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧬</text></svg>">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -248,12 +248,22 @@ efficient inference, and real-time responses...
                     <div class="install-step">
                         <div class="install-step-number">1</div>
                         <div class="install-step-content">
-                            <h3 class="install-step-title">Install AiTril</h3>
+                            <h3 class="install-step-title">Quick Install (Recommended)</h3>
                             <div class="install-code-block">
+                                <code class="install-code">curl -fsSL https://raw.githubusercontent.com/professai/aitril/main/install.sh | bash</code>
+                                <button class="install-copy" data-copy="curl -fsSL https://raw.githubusercontent.com/professai/aitril/main/install.sh | bash">Copy</button>
+                            </div>
+                            <p class="install-step-note">Linux/macOS | Auto-detects Python, installs dependencies</p>
+                            <div class="install-code-block" style="margin-top: 10px;">
+                                <code class="install-code">iwr -useb https://raw.githubusercontent.com/professai/aitril/main/install.ps1 | iex</code>
+                                <button class="install-copy" data-copy="iwr -useb https://raw.githubusercontent.com/professai/aitril/main/install.ps1 | iex">Copy</button>
+                            </div>
+                            <p class="install-step-note">Windows PowerShell</p>
+                            <div class="install-code-block" style="margin-top: 10px;">
                                 <code class="install-code">pip install aitril</code>
                                 <button class="install-copy" data-copy="pip install aitril">Copy</button>
                             </div>
-                            <p class="install-step-note">Requires Python 3.14.0+ | Latest: v0.0.36</p>
+                            <p class="install-step-note">Manual install | Requires Python 3.8+ | Latest: v0.0.37</p>
                         </div>
                     </div>
 
